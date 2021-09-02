@@ -22,6 +22,9 @@ server.post('/api/register', (req, res) => {
 server.post('/api/login', (req, res) => {
   res.status(200).json({ message: 'Welcome Danny' })
 })
+server.get('/', (req, res) => {
+  res.send(`<h2>Let's write some middleware!</h2>`)
+})
 server.listen(PORT, () => {
   console.log(`listening on port ${PORT}`)
 })
