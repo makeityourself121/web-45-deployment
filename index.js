@@ -23,7 +23,7 @@ server.post('/api/login', (req, res) => {
   res.status(200).json({ message: 'Welcome Danny' })
 })
 server.get('/', (req, res) => {
-  res.send(`<h2>Let's write some middleware!</h2>`)
+  res.send(`<h1>Welcome to Danny's server 😊 !</h1>`)
 })
 server.listen(PORT, () => {
   console.log(`listening on port ${PORT}`)
